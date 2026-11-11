@@ -118,8 +118,6 @@ todoList.addEventListener("click", (e) => {
     }
 
     if (action === 'delete') {
-
-
         deleteTodo(e, id)
     }
 
@@ -170,14 +168,14 @@ function startEdit(id) {
     todoInput.value = currentTodo.text
     formBtn.textContent = 'Update'
     formBtn.className = "px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg transition-colors cursor-pointer";
-    cancelBtn.className.remove('hidden')
+    cancelBtn.classList.remove('hidden')
     todoInput.focus()
 }
 
 function cancelEditing(){
     cancelBtn.classList.add('hidden')
     formBtn.textContent = 'Add'
-    formBtn.classList = 'px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors cursor-pointer'
+    formBtn.className = 'px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors cursor-pointer'
     todoInput.value = ""
 }
 
