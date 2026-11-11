@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="bg-slate-100 min-h-screen py-10 px-4">
+
+    <div class="bg-white max-w-md mx-auto rounded-2xl shadow-lg overflow-hidden border border-slate-200 ">
+
+        <div class="bg-indigo-600 text-white px-6 py-5 ">
+            <h1 class="text-2xl font-bold tracking-wide">Todo App</h1>
+        </div>
+
+        <div class="p-5">
+            <form action="" id="todo-form" class="flex flex-col mb-3 gap-2">
+                <div class="flex gap-5 mb-1">
+                    <input id="todo-input" class="border border-slate-300 flex-1 px-4 py-2 rounded-lg focus:outline-none focus:ring-2 focus:ring-indigo-500 text-slate-800" type="text" placeholder="Enter Task Discription...">
+                    <button id="form-btn" class="px-5 py-2 bg-indigo-600 hover:bg-indigo-700 text-white font-medium rounded-lg transition-colors cursor-pointer">Add</button>
+                </div>
+               <button type="button" id="Cancel-btn" class="hidden self-end text-xs text-slate-500 hover:text-slate-700 underline cursor-pointer">Cancel Editing</button>
+            </form>
+
+            <div class="flex items-center justify-between text-xs border-b border-slate-100 py-2 mb-1 font-semibold text-slate-500 uppercase tracking-wider">
+                <p id="task-count"></p>
+                <p id="task-complete"></p>
+            </div>
+
+            <ul id="todo-list" class="py-5 flex flex-col gap-3">
+                
+            </ul>
+
+            <div id="empty-state" class="hidden text-center py-6 text-slate-400">
+                <p class="text-sm">No tasks found. Add a task above to get started!</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
