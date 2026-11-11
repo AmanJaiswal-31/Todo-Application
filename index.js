@@ -169,8 +169,8 @@ function startEdit(id) {
 
     todoInput.value = currentTodo.text
     formBtn.textContent = 'Update'
-    formBtn.classList = "px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg transition-colors cursor-pointer";
-    cancelBtn.classList.remove('hidden')
+    formBtn.className = "px-5 py-2 bg-amber-600 hover:bg-amber-700 text-white font-medium rounded-lg transition-colors cursor-pointer";
+    cancelBtn.className.remove('hidden')
     todoInput.focus()
 }
 
